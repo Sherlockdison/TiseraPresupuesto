@@ -166,7 +166,7 @@
       <div class="col-md-6">
         <p>DIRECCION DE ENTREGA</p>
         <div class="row">
-          <h4>observaciones</h4>
+          <p>observaciones</p>
           <hr>
           <p>horario de entrega</p>
         </div>
