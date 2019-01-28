@@ -164,12 +164,72 @@
     </div>
     <div class="row">
       <div class="col-md-6">
-        <p>DETALLE DE ENTREGA</p>
+        <p>DIRECCION DE ENTREGA</p>
+        <div class="row">
+          <h4>observaciones</h4>
+          <hr>
+          <p>horario de entrega</p>
+        </div>
       </div>
+      <div class="col-md-6">
+        <p>NOMBRE DE CONTACTO</p>
+        <div class="row">
+          <div class="col-md-9">
+            <p>Envío</p>
+          </div>
+          <div class="col-md-3">
+            <p>$$$$$$</p>
+          </div>
+          <div class="col-md-9">
+            <p>SUBTOTAL</p>
+          </div>
+          <div class="col-md-3">
+            <p>$$$$$$</p>
+          </div>
 
-    </div>
-
-    {{-- div col-md-12 --}}
+          <div class="col-md-8">
+            <p>RECARGO</p>
+          </div>
+          <div class="col-md-1">
+            <p>15%</p>
+          </div>
+          <div class="col-md-3">
+            <p>$$$$$$</p>
+          </div>
+          <div class="col-md-8">
+            <p>I.V.A. %</p>
+          </div>
+          <div class="col-md-1">
+            <p>21%</p>
+          </div>
+          <div class="col-md-3">
+            <p>$$$$$$</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>FORMAS DE PAGO</p>
+        </div>
+        <div class="col-md-3">
+          <p>TOTAL FINAL</p>
+        </div>
+        <div class="col-md-3">
+          <p>$$$$$</p>
+        </div>
+      </div>
+      <div class="row">
+        <p>VALOR CONVERTIDO A LETRAS BUSCAR FORMAS</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>las imagenes son a mido ilistrativo</p>
+        </div>
+        <div class="col-md-6">
+          <p>Nombre del vendedor logeado</p>
+        </div>
+      </div>         {{-- div col-md-12 --}}
   </div>
   {{-- div container --}}
 </div>
