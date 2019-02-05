@@ -8,13 +8,27 @@
     <div class="col-md-12">
       <div class="row">
         <div class="col-md-2">
-          <h4>aca va tipo de operacion</h4>
+          <select class="custom-select custom-select-lg">
+            <option selected>Operación</option>
+            <option value="1">A</option>
+            <option value="2">B</option>
+            <option value="3">C/F</option>
+          </select>
         </div>
         <div class="col-md-8">
-          <h1>Presupuesto, estaria bueno que cambie segun eleccion</h1>
+          <select class="custom-select custom-select-lg mb-3">
+            <option selected>PRESUPUESTO</option>
+            <option value="1">BOLETA PEDIDO A</option>
+            <option value="2">BOLETA PEDIDO B</option>
+            <option value="3">BOLETA PEDIDO C/F</option>
+          </select>
         </div>
         <div class="col-md-2">
-          <h4>aca va numeracion automatica</h4>
+
+            <div class="number">
+              25499
+            </div>
+
         </div>
       </div>
 
