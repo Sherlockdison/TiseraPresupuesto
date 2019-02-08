@@ -25,8 +25,10 @@
         </div>
         <div class="col-md-2">
 
-            <div class="number">
+            <div class="custom-select-lg">
+              <strong>
               25499
+              </strong>
             </div>
 
         </div>
@@ -34,62 +36,62 @@
 
 
       <div class="row">
-        <div class="col-md-6">
-
-          <h2>Logotipo y Datos de cada sucursal</h2>
-
-        </div>
-
-        <div class="col-md-6">
+        <div class="col-md-6 border">
           <div class="row">
             <div class="col-md-6">
-              <h3>DATOS CLIENTE</h3>
+              <img src="/images/logoTisera.png" alt="..." class="img-thumbnail border-0">
+            </div>
+            <div class="col-md-6">
+              <h5>Tisera S.A. Muebles de oficina</h5>
+              <h5>Sarmiento 1373 CABA</h5>
+              <h5>CUIT: 30-55480730-1</h5>
+              <h5>TEL: 4373-3944</h5>
+              <h5>esteban@tisera.com</h5>
+              <h5><a href="www.tisera.com">www.tisera.com</a></h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 border">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>DATOS CLIENTE</h4>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-4">
-              <h4>Razon Social</h4>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Razon Social</span>
             </div>
-            <div class="col-md-8">
-              <h4>esto esta vacio</h4>
-            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           </div>
 
-          <div class="row">
-            <div class="col-md-4">
-              <h4>Domicilio Fiscal</h4>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Domicilio Fiscal</span>
             </div>
-            <div class="col-md-8">
-              <h4>esto esta vacio</h4>
-            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           </div>
 
-          <div class="row">
-            <div class="col-md-4">
-              <h4>tELEFONO</h4>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Teléfono</span>
             </div>
-            <div class="col-md-8">
-              <h4>esto esta vacio</h4>
-            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           </div>
 
-          <div class="row">
-            <div class="col-md-4">
-              <h4>CUIT</h4>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">CUIT</span>
             </div>
-            <div class="col-md-8">
-              <h4>esto esta vacio</h4>
-            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           </div>
 
-          <div class="row">
-            <div class="col-md-4">
-              <h4>EMAIL</h4>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">E-mail</span>
             </div>
-            <div class="col-md-8">
-              <h4>esto esta vacio</h4>
-            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           </div>
 
         </div>
