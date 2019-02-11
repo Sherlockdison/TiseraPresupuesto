@@ -16,96 +16,93 @@
           </select>
         </div>
         <div class="col-md-8">
-          <select class="custom-select custom-select-lg mb-3">
-            <option selected>PRESUPUESTO</option>
-            <option value="1">BOLETA PEDIDO A</option>
-            <option value="2">BOLETA PEDIDO B</option>
-            <option value="3">BOLETA PEDIDO C/F</option>
-          </select>
+          <div class="textCen">
+            <h4>Presupuesto</h4>
+          </div>
+
         </div>
         <div class="col-md-2">
 
-            <div class="custom-select-lg">
-              <strong>
-              25499
-              </strong>
+            <div class="custom-select-lg textCen">
+              <strong>25499 </strong>
             </div>
-
         </div>
       </div>
 
 
       <div class="row">
-        <div class="col-md-6 border">
-          <div class="row">
-            <div class="col-md-6">
+        <div class="col-md-6 ">
+          <div class="row border rounded styleBox ">
+            <div class="col-md-6 textRtl">
               <img src="/images/logoTisera.png" alt="..." class="img-thumbnail border-0">
             </div>
-            <div class="col-md-6">
+
+            <div class="col-md-6 textRtl">
               <h5>Tisera S.A. Muebles de oficina</h5>
-              <h5>Sarmiento 1373 CABA</h5>
-              <h5>CUIT: 30-55480730-1</h5>
-              <h5>TEL: 4373-3944</h5>
-              <h5>esteban@tisera.com</h5>
-              <h5><a href="www.tisera.com">www.tisera.com</a></h5>
+              <p>Sarmiento 1373 CABA <br>
+              CUIT: 30-55480730-1 <br>
+              TEL: 4373-3944 <br>
+              esteban@tisera.com <br>
+              <a href="www.tisera.com">www.tisera.com</a></p>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-6 border">
-          <div class="row">
+          <div class="row border rounded styleBox">
             <div class="col-md-6">
-              <h4>DATOS CLIENTE</h4>
+              <p>{{date('d-m-y')}}</p>
+            </div>
+            <div class="col-md-6">
+              <p>{{date('H:i:s')}}</p>
             </div>
           </div>
+        </div>
 
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Razon Social</span>
+        <div class="col-md-6 ">
+          <div class="row border rounded styleBox padRigLef">
+
+            <div class="col-md-12 textCen">
+              <h5>Datos del Cliente</h5>
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
 
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Domicilio Fiscal</span>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Razon Social</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
 
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Teléfono</span>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Domicilio Fiscal</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
 
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">CUIT</span>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Teléfono</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
 
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">E-mail</span>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">CUIT</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
 
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">E-mail</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+          </div>
         </div>
 
       </div>
 
-      <div class="row">
-        <div class="col-md-6">
-          <h3>fecha</h3>
-        </div>
-        <div class="col-md-6">
-          <h3>hora</h3>
-        </div>
-      </div>
 
       <div class="row">
         <div class="col-md-12">

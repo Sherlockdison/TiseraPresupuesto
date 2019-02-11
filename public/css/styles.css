@@ -1,0 +1,18 @@
+.textRtl {
+  text-align: right;
+  margin-top: 5%;
+}
+
+.textCen {
+  text-align: center;
+  margin: 1%;
+}
+
+.styleBox {
+  margin: 1%;
+}
+
+.padRigLef {
+  padding-left: 3%;
+  padding-right: 3%;
+}
