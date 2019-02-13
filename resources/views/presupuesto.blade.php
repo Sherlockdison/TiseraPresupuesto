@@ -104,147 +104,189 @@
       </div>
 
 
-      <div class="row">
-        <div class="col-md-12">
+      <div class="row styleBox">
           {{-- quiero agregar campos y este div sirve para otra columna y mostrar segun--}}
-          <form role="form">
-            <div class="row">
-              <div class="col-md-2">
-                <label for="Codigo">Codigo:</label>
-                <input type="text" class="form-control" id="Codigo">
-              </div>
-              <div class="col-md-2">
-                <label for="Cantidad">Cantidad:</label>
-                <input type="number" class="form-control" id="Cantidad">
-              </div>
-              <div class="col-md-4">
-                <label for="Aclaraciones">Aclaraciones:</label>
-                <input type="text" class="form-control" id="Aclaraciones">
-              </div>
-              <div class="col-md-4">
-                <button type="submit" class="btn btn-default">Agregar</button>
+        <form role="form">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Codigo:</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
               </div>
             </div>
-          </form>
+            <div class="col-md-2">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Cantidad:</span>
+                </div>
+                <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Aclaraciones:</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+            </div>
+            <div class="col-md-1">
+              <button type="submit" class="btn btn-danger">Agregar</button>
+            </div>
+          </div>
+        </form>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-1" style="background-color:#aaa">
-        <P>CODIGO</P>
-      </div>
-      <div class="col-md-3" style="background-color:#bbb">
-        <P>DESCRIPCION</P>
-      </div>
-      <div class="col-md-1" style="background-color:#aaa">
-        <P>CANTIDAD</P>
-      </div>
-      <div class="col-md-2" style="background-color:#bbb">
-        <P>ACLARACIONES</P>
-      </div>
-      <div class="col-md-3" style="background-color:#aaa">
-        <P>FOTO</P>
-      </div>
-      <div class="col-md-1" style="background-color:#bbb">
-        <P>PRECIO/U</P>
-      </div>
-      <div class="col-md-1" style="background-color:#aaa">
-        <P>TOTAL PRODUCTO</P>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-md-1" style="background-color:#aaa">
-        <P>f52</P>
-      </div>
-      <div class="col-md-3" style="background-color:#bbb">
-        <P>sillon royal tatatatatat</P>
-      </div>
-      <div class="col-md-1" style="background-color:#aaa">
-        <P>2</P>
-      </div>
-      <div class="col-md-2" style="background-color:#bbb">
-        <P>todo en color marron oscurrito</P>
-      </div>
-      <div class="col-md-3" style="background-color:#aaa">
-        <P>Fotiqui</P>
-      </div>
-      <div class="col-md-1" style="background-color:#bbb">
-        <P>4400</P>
-      </div>
-      <div class="col-md-1" style="background-color:#aaa">
-        <P>8800</P>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <p>DIRECCION DE ENTREGA</p>
-        <div class="row">
-          <p>observaciones</p>
-          <hr>
-          <p>horario de entrega</p>
+      <div class="row">
+        <div class="col-md-1 headTab">
+          <h6>Codigo</h6>
+        </div>
+        <div class="col-md-3 headTab">
+          <h6>Descripción</h6>
+        </div>
+        <div class="col-md-1 headTab">
+          <h6>Cantidad</h6>
+        </div>
+        <div class="col-md-2 headTab">
+          <h6>Aclaraciones</h6>
+        </div>
+        <div class="col-md-3 headTab">
+          <h6>Imagen</h6>
+        </div>
+        <div class="col-md-1 headTab">
+          <h6>Precio/u</h6>
+        </div>
+        <div class="col-md-1 headTab">
+          <h6>Total</h6>
         </div>
       </div>
-      <div class="col-md-6">
-        <p>NOMBRE DE CONTACTO</p>
-        <div class="row">
-          <div class="col-md-9">
-            <p>Envío</p>
-          </div>
-          <div class="col-md-3">
-            <p>$$$$$$</p>
-          </div>
-          <div class="col-md-9">
-            <p>SUBTOTAL</p>
-          </div>
-          <div class="col-md-3">
-            <p>$$$$$$</p>
-          </div>
-
-          <div class="col-md-8">
-            <p>RECARGO</p>
-          </div>
-          <div class="col-md-1">
-            <p>15%</p>
-          </div>
-          <div class="col-md-3">
-            <p>$$$$$$</p>
-          </div>
-          <div class="col-md-8">
-            <p>I.V.A. %</p>
-          </div>
-          <div class="col-md-1">
-            <p>21%</p>
-          </div>
-          <div class="col-md-3">
-            <p>$$$$$$</p>
-          </div>
-          </div>
+{{-- aca va el eiterador de objetos traido desde la base --}}
+      <div class="row">
+        <div class="col-md-1 border listProducts">
+          <h6>F52</h6>
+        </div>
+        <div class="col-md-3 border listProducts">
+          <p><strong>sillon royal tatatatatat</strong></p>
+        </div>
+        <div class="col-md-1 border listProducts">
+          <h4>2</h4>
+        </div>
+        <div class="col-md-2 border listProducts">
+          <p><em>todo en color marron oscurrito</em></p>
+        </div>
+        <div class="col-md-3 border listProducts">
+          <img src="" alt="">
+        </div>
+        <div class="col-md-1 border listProducts">
+          <p>4400</p>
+        </div>
+        <div class="col-md-1 border listProducts">
+          <p>8800</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <p>FORMAS DE PAGO</p>
+          <div class="headTab styleBox">
+            <h6 class="">Datos de Envío</h6>
+          </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cotizar</button>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Observaciones</span>
+              </div>
+              <textarea class="form-control" aria-label="Observaciones"></textarea>
+            </div>
+
+          <select class="custom-select mb-3">
+            <option selected>Seleccione un horario</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+          <select class="custom-select mb-3">
+            <option selected>Seleccione forma de pago</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
         </div>
-        <div class="col-md-3">
-          <p>TOTAL FINAL</p>
-        </div>
-        <div class="col-md-3">
-          <p>$$$$$</p>
-        </div>
-      </div>
-      <div class="row">
-        <p>VALOR CONVERTIDO A LETRAS BUSCAR FORMAS</p>
-      </div>
-      <div class="row">
         <div class="col-md-6">
+          <div class="headTab styleBox">
+            <h6 class="">Nombre de Contacto</h6>
+          </div>
+            <form>
+              <div class="form-row mb-3">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col">
+                  <input type="number" class="form-control" placeholder="Numero Celular">
+                </div>
+              </div>
+            </form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Envío..........</span>
+              </div>
+              <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Subtotal........</span>
+              </div>
+              <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recargo</button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">15% 6 cuotas</a>
+                  <a class="dropdown-item" href="#">50% 12 cuotas</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div role="separator" class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
+              <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">IVA........</span>
+              </div>
+              <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">TOTAL FINAL....</span>
+              </div>
+              <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 mb-2 border rounded headTab">
+            <h6>SETECIENTOS CUARENTA MIL DOCIENTOS TRES PESOS</h6>
+          </div>
+
+
+        <div class="col-md-6 border rounded headTab ">
           <p>las imagenes son a mido ilistrativo</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 border rounded headTab">
           <p>Nombre del vendedor logeado</p>
         </div>
-      </div>         {{-- div col-md-12 --}}
-  </div>
-  {{-- div container --}}
+    </div>          {{-- div col-md-12 --}}
+  </div>       {{-- div container --}}
 </div>
 
 @endsection
