@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PresupuestosController extends Controller
+class BudgetsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class PresupuestosController extends Controller
      */
     public function index()
     {
-        return view('presupuesto');
+
     }
 
     /**
@@ -23,7 +23,7 @@ class PresupuestosController extends Controller
      */
     public function create()
     {
-        //
+        return view('budgets.form');//
     }
 
     /**
@@ -79,5 +79,10 @@ class PresupuestosController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function faq()
+    {
+      return view('faq');
     }
 }

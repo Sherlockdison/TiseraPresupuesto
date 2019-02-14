@@ -6,7 +6,7 @@
 
   <div class="container">
     <div class="col-md-12">
-      <div class="row">
+      <div class="row mb-3">
         <div class="col-md-2">
           <select class="custom-select custom-select-lg">
             <option selected>Operación</option>
@@ -19,20 +19,18 @@
           <div class="textCen">
             <h4>Presupuesto</h4>
           </div>
-
         </div>
         <div class="col-md-2">
-
-            <div class="custom-select-lg textCen">
-              <strong>25499 </strong>
-            </div>
+          <div class="custom-select-lg textCen">
+            <strong>25499 </strong>
+          </div>
         </div>
       </div>
 
 
-      <div class="row">
+      <div class="row mb-3">
         <div class="col-md-6 ">
-          <div class="row border rounded styleBox ">
+          <div class="row mb-5 border rounded  ">
             <div class="col-md-6 textRtl">
               <img src="/images/logoTisera.png" alt="..." class="img-thumbnail border-0">
             </div>
@@ -46,7 +44,7 @@
               <a href="www.tisera.com">www.tisera.com</a></p>
             </div>
           </div>
-          <div class="row border rounded styleBox">
+          <div class="row border rounded ">
             <div class="col-md-6">
               <p>{{date('d-m-y')}}</p>
             </div>
@@ -57,8 +55,10 @@
         </div>
 
         <div class="col-md-6 ">
-          <div class="row border rounded styleBox padRigLef">
-
+          <div class="row border rounded  padRigLef">
+            <form class="budgetForm" method="POST" action="{{ route('budgets.store') }}" enctype="multipart/form-data">
+  								@csrf
+            </form>
             <div class="col-md-12 textCen">
               <h5>Datos del Cliente</h5>
             </div>
@@ -104,7 +104,7 @@
       </div>
 
 
-      <div class="row styleBox">
+      <div class="row ">
           {{-- quiero agregar campos y este div sirve para otra columna y mostrar segun--}}
         <form role="form">
           <div class="row">
@@ -139,31 +139,31 @@
         </form>
       </div>
 
-      <div class="row">
-        <div class="col-md-1 headTab">
+      <div class="row mb-1 headTab">
+        <div class="col-md-1">
           <h6>Codigo</h6>
         </div>
-        <div class="col-md-3 headTab">
+        <div class="col-md-3">
           <h6>Descripción</h6>
         </div>
-        <div class="col-md-1 headTab">
+        <div class="col-md-1">
           <h6>Cantidad</h6>
         </div>
-        <div class="col-md-2 headTab">
+        <div class="col-md-2">
           <h6>Aclaraciones</h6>
         </div>
-        <div class="col-md-3 headTab">
+        <div class="col-md-3">
           <h6>Imagen</h6>
         </div>
-        <div class="col-md-1 headTab">
+        <div class="col-md-1">
           <h6>Precio/u</h6>
         </div>
-        <div class="col-md-1 headTab">
+        <div class="col-md-1">
           <h6>Total</h6>
         </div>
       </div>
 {{-- aca va el eiterador de objetos traido desde la base --}}
-      <div class="row">
+      <div class="row mb-3">
         <div class="col-md-1 border listProducts">
           <h6>F52</h6>
         </div>
@@ -188,11 +188,11 @@
       </div>
       <div class="row">
         <div class="col-md-6">
-          <div class="headTab styleBox">
+          <div class="headTab ">
             <h6 class="">Datos de Envío</h6>
           </div>
             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <input type="text" class="form-control" placeholder="Av. corrientes 7542" aria-label="Av. corrientes 7542" aria-describedby="button-addon2">
               <div class="input-group-append">
                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cotizar</button>
               </div>
@@ -219,7 +219,7 @@
           </select>
         </div>
         <div class="col-md-6">
-          <div class="headTab styleBox">
+          <div class="headTab ">
             <h6 class="">Nombre de Contacto</h6>
           </div>
             <form>
@@ -279,7 +279,7 @@
           </div>
 
 
-        <div class="col-md-6 border rounded headTab ">
+        <div class="col-md-6 border rounded headTab">
           <p>las imagenes son a mido ilistrativo</p>
         </div>
         <div class="col-md-6 border rounded headTab">
