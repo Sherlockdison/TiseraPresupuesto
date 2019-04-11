@@ -27,7 +27,7 @@
 
 		<!-- styles -->
 
-		<link rel="stylesheet" href="{{ asset('/css/app.css') }}">
+		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
 		<link rel="stylesheet" href="{{ asset('/css/styles.css') }}">
 
 		<!-- favicon -->
@@ -49,19 +49,13 @@
 
 
 		<!-- footer -->
-		
+
     {{-- @include('layout.footer') --}}
 
 	<!-- script -->
-		      <script src="js/jquery-3.3.1.min.js"></script>
-					   <script>
-						     $(".toggle-nav").click(function () {
-							          $(".navbar-nav ul").slideToggle(350);
-		              });
-		        </script>
-						<script src="js/theme.js">
-
-						</script>
-		@yield ('page-scripts')
+					<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+				<!-- Include all compiled plugins (below), or include individual files as needed -->
+				<script src="{{ asset('js/bootstrap.min.js') }}"></script>
 	</body>
 </html>

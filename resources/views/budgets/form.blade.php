@@ -6,6 +6,8 @@
 
   <div class="container">
     <div class="col-md-12">
+      <form class="budgetForm" method="POST" action="{{ route('budgets.store') }}" enctype="multipart/form-data">
+            @csrf
       <div class="row mb-3">
         <div class="col-md-2">
           <select class="custom-select custom-select-lg">
@@ -56,19 +58,19 @@
 
         <div class="col-md-6 ">
           <div class="row border rounded  padRigLef">
-            <form class="budgetForm" method="POST" action="{{ route('budgets.store') }}" enctype="multipart/form-data">
-  								@csrf
-            </form>
+
             <div class="col-md-12 textCen">
               <h5>Datos del Cliente</h5>
             </div>
 
             <div class="input-group mb-3">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Razon Social</span>
+                <span class="input-group-text" id="name">Razon Social</span>
               </div>
-              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <input id="name" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="name">
             </div>
+
+
 
             <div class="input-group mb-3">
               <div class="input-group-prepend">
@@ -285,6 +287,8 @@
         <div class="col-md-6 border rounded headTab">
           <p>Nombre del vendedor logeado</p>
         </div>
+        <button type="submit" name="button" style="with:80px;"></button>
+      </form>
     </div>          {{-- div col-md-12 --}}
   </div>       {{-- div container --}}
 </div>
