@@ -14,6 +14,7 @@ class BudgetsController extends Controller
     public function index()
     {
 
+      return view('budgets.index');//
     }
 
     /**
@@ -34,7 +35,7 @@ class BudgetsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
