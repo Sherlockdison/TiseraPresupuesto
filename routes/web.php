@@ -20,3 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/faq', 'BudgetsController@faq')->name('faq');
 Route::resource('budgets', 'BudgetsController');
+Route::resource('products', 'ProductsController');
