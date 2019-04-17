@@ -82,6 +82,14 @@
             </div>
           </div>
           <div class="form-group">
+            <select class="custom-select">
+              <option selected>Concepto de Abono</option>
+              <option value="1">Seña</option>
+              <option value="2">Pago Total</option>
+              <option value="3">Debe todo</option>
+            </select>
+          </div>
+          <div class="form-group">
             <label for="exampleFormControlSelect2">Example multiple select</label>
             <select multiple class="form-control" id="exampleFormControlSelect2">
               <option>1</option>
