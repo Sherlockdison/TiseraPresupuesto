@@ -1,5 +1,5 @@
 <nav class="navbar mb-4 navbar-expand-lg navbar-light bg-white">
-  <a class="navbar-brand" href="#">Presupuesto Tisera S.A.</a>
+  <a class="navbar-brand" href="Home"><img src="/images/logoTisera.png" width="100" height="50" class="d-inline-block align-top" alt="logo"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
