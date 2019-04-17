@@ -116,22 +116,12 @@
       <div class="modal-body">
         <form>
           <div class="form-group">
-            <div class="input-group">
-              <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
-              <div class="input-group-append">
-                <button type="button" class="btn btn-outline-secondary">Tipo de operación</button>
-                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">A</a>
-                  <a class="dropdown-item" href="#">B</a>
-                  <a class="dropdown-item" href="#">SF</a>
-                  <div role="separator" class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Presupuesto</a>
-                </div>
-              </div>
-            </div>
+            <select class="custom-select">
+              <option selected>Tipo de operación</option>
+              <option value="1">Factura A</option>
+              <option value="2">Factura B</option>
+              <option value="3">SF</option>
+            </select>
           </div>
           <div class="form-group">
             <div class="row">
@@ -171,26 +161,37 @@
             </div>
           </div>
           <div class="form-group">
-            <div class="input-group">
-              <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
-              <div class="input-group-append">
-                <button type="button" class="btn btn-outline-secondary">Concepto</button>
-                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Seña</a>
-                  <a class="dropdown-item" href="#">Total pago</a>
-                  <a class="dropdown-item" href="#">Contraentrega</a>
-                  <div role="separator" class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Debe todo</a>
-                </div>
+            <select class="custom-select">
+              <option selected>Concepto de Abono</option>
+              <option value="1">Seña</option>
+              <option value="2">Pago Total</option>
+              <option value="3">Debe todo</option>
+            </select>
+          </div>
+          <hr>
+          <div class="form-group">
+            <h6 class="text-center">Datos de facturación</h6>
+            <div class="row mt-3">
+              <div class="col-md-6 pb-2">
+                <input type="text" class="form-control" placeholder="Razón social">
+              </div>
+              <div class="col-md-6 pb-2">
+                <input type="text" class="form-control" placeholder="Cuit/cuil">
+              </div>
+              <div class="col-md-6 pb-2">
+                <input type="text" class="form-control" placeholder="Domicilio fiscal">
+              </div>
+              <div class="col-md-6 pb-2">
+                <input type="text" class="form-control" placeholder="Teléfono">
+              </div>
+              <div class="col-md-12 pb-2">
+                <input type="email" class="form-control" placeholder="email@email.com">
               </div>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="detailPayment" class="col-form-label">Aclaraciones:</label>
-            <textarea class="form-control" id="detailPayment"></textarea>
+            <div class="form-group">
+              <label for="detailPayment" class="col-form-label">Aclaraciones:</label>
+              <textarea class="form-control" id="detailPayment"></textarea>
+            </div>
           </div>
         </form>
       </div>

@@ -1,296 +1,104 @@
 @extends ('layouts.base')
 
-@section('title', 'Presupuesto')
+@section('title', 'Crear presupuesto')
 
 @section('main_content')
 
   <div class="container">
-    <div class="col-md-12">
-      <form class="budgetForm" method="POST" action="{{ route('budgets.store') }}" enctype="multipart/form-data">
-            @csrf
-      <div class="row mb-3">
-        <div class="col-md-2">
-          <select class="custom-select custom-select-lg">
-            <option selected>Operación</option>
-            <option value="1">A</option>
-            <option value="2">B</option>
-            <option value="3">C/F</option>
-          </select>
-        </div>
-        <div class="col-md-8">
-          <div class="textCen">
-            <h4>Presupuesto</h4>
+    <h2>Formulario editar presupuesto</h2>
+    <div class="row pt-2">
+      <div class="col-md-9 shadow p-3 mb-5 bg-white rounded">
+        <form>
+          <h4>Datos de envío:</h4>
+          <div class="form-group">
+            <label for="adressShipping" class="col-form-label">Dirección:</label>
+            <input type="text" class="form-control" id="adressShipping">
           </div>
-        </div>
-        <div class="col-md-2">
-          <div class="custom-select-lg textCen">
-            <strong>25499 </strong>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row mb-3">
-        <div class="col-md-6 ">
-          <div class="row mb-5 border rounded  ">
-            <div class="col-md-6 textRtl">
-              <img src="/images/logoTisera.png" alt="..." class="img-thumbnail border-0">
-            </div>
-
-            <div class="col-md-6 textRtl">
-              <h5>Tisera S.A. Muebles de oficina</h5>
-              <p>Sarmiento 1373 CABA <br>
-              CUIT: 30-55480730-1 <br>
-              TEL: 4373-3944 <br>
-              esteban@tisera.com <br>
-              <a href="www.tisera.com">www.tisera.com</a></p>
-            </div>
-          </div>
-          <div class="row border rounded ">
+          <div class="form-group row">
             <div class="col-md-6">
-              <p>{{date('d-m-y')}}</p>
+              <label for="responsibleShipping" class="col-form-label">Responsable:</label>
+              <input type="text" class="form-control" id="responsibleShipping">
             </div>
             <div class="col-md-6">
-              <p>{{date('H:i:s')}}</p>
+              <label for="phoneShipping" class="col-form-label">Teléfono:</label>
+              <input type="number" class="form-control" id="phoneShipping">
+            </div>
+            <div class="col-md-6">
+              <label for="hourShipping" class="col-form-label">Horario:</label>
+              <input type="hour" class="form-control" id="hourShipping">
+            </div>
+            <div class="col-md-6">
+              <label for="detailShipping" class="col-form-label">Aclaraciones:</label>
+              <textarea class="form-control" id="detailShipping"></textarea>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-6 ">
-          <div class="row border rounded  padRigLef">
-
-            <div class="col-md-12 textCen">
-              <h5>Datos del Cliente</h5>
-            </div>
-
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="name">Razon Social</span>
-              </div>
-              <input id="name" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="name">
-            </div>
-
-
-
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Domicilio Fiscal</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-            </div>
-
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Teléfono</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-            </div>
-
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">CUIT</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-            </div>
-
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">E-mail</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-            </div>
-
+          <hr>
+          <h4>Modo de Pago</h4>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Tipo de operacion</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Factura A</option>
+              <option>Factura B</option>
+              <option>Factura C</option>
+              <option>SF</option>
+              <option>Presupuesto</option>
+            </select>
           </div>
-        </div>
-
-      </div>
-
-
-      <div class="row ">
-          {{-- quiero agregar campos y este div sirve para otra columna y mostrar segun--}}
-        <form role="form">
-          <div class="row">
-            <div class="col-md-2">
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-default">Codigo:</span>
+          <div class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-2 pt-2">Medio de pago</legend>
+              <div class="col-sm-10 d-flex flex-wrap">
+                <div class="form-check flex-fill p-1 m-1">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="cash" value="option1" checked>
+                  <label class="form-check-label" for="cash">
+                    Efectivo
+                  </label>
                 </div>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <div class="form-check flex-fill p-1 m-1">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="card" value="option2">
+                  <label class="form-check-label" for="card">
+                    Tarjeta
+                  </label>
+                </div>
+                <div class="form-check flex-fill p-1 m-1">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="deposit" value="option2">
+                  <label class="form-check-label" for="deposit">
+                    Depósito
+                  </label>
+                </div>
+                <div class="form-check flex-fill p-1 m-1">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="check" value="option2">
+                  <label class="form-check-label" for="check">
+                    Cheque al Día
+                  </label>
+                </div>
+                <div class="form-check flex-fill p-1 m-1 disabled">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="transfer" value="option3" disabled>
+                  <label class="form-check-label" for="transfer">
+                    Transferencia
+                  </label>
+                </div>
               </div>
             </div>
-            <div class="col-md-2">
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-default">Cantidad:</span>
-                </div>
-                <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-              </div>
-            </div>
-            <div class="col-md-7">
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-default">Aclaraciones:</span>
-                </div>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-              </div>
-            </div>
-            <div class="col-md-1">
-              <button type="submit" class="btn btn-danger">Agregar</button>
-            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">Example multiple select</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
         </form>
       </div>
-
-      <div class="row mb-1 headTab">
-        <div class="col-md-1">
-          <h6>Codigo</h6>
-        </div>
-        <div class="col-md-3">
-          <h6>Descripción</h6>
-        </div>
-        <div class="col-md-1">
-          <h6>Cantidad</h6>
-        </div>
-        <div class="col-md-2">
-          <h6>Aclaraciones</h6>
-        </div>
-        <div class="col-md-3">
-          <h6>Imagen</h6>
-        </div>
-        <div class="col-md-1">
-          <h6>Precio/u</h6>
-        </div>
-        <div class="col-md-1">
-          <h6>Total</h6>
-        </div>
-      </div>
-{{-- aca va el eiterador de objetos traido desde la base --}}
-      <div class="row mb-3">
-        <div class="col-md-1 border listProducts">
-          <h6>F52</h6>
-        </div>
-        <div class="col-md-3 border listProducts">
-          <p><strong>sillon royal tatatatatat</strong></p>
-        </div>
-        <div class="col-md-1 border listProducts">
-          <h4>2</h4>
-        </div>
-        <div class="col-md-2 border listProducts">
-          <p><em>todo en color marron oscurrito</em></p>
-        </div>
-        <div class="col-md-3 border listProducts">
-          <img src="" alt="">
-        </div>
-        <div class="col-md-1 border listProducts">
-          <p>4400</p>
-        </div>
-        <div class="col-md-1 border listProducts">
-          <p>8800</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="headTab ">
-            <h6 class="">Datos de Envío</h6>
-          </div>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Av. corrientes 7542" aria-label="Av. corrientes 7542" aria-describedby="button-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cotizar</button>
-              </div>
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Observaciones</span>
-              </div>
-              <textarea class="form-control" aria-label="Observaciones"></textarea>
-            </div>
-
-          <select class="custom-select mb-3">
-            <option selected>Seleccione un horario</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-
-          <select class="custom-select mb-3">
-            <option selected>Seleccione forma de pago</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div class="col-md-6">
-          <div class="headTab ">
-            <h6 class="">Nombre de Contacto</h6>
-          </div>
-            <form>
-              <div class="form-row mb-3">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Nombre">
-                </div>
-                <div class="col">
-                  <input type="number" class="form-control" placeholder="Numero Celular">
-                </div>
-              </div>
-            </form>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Envío..........</span>
-              </div>
-              <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Subtotal........</span>
-              </div>
-              <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-            </div>
-
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recargo</button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">15% 6 cuotas</a>
-                  <a class="dropdown-item" href="#">50% 12 cuotas</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div role="separator" class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-              </div>
-              <input type="text" class="form-control" aria-label="Text input with dropdown button">
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">IVA........</span>
-              </div>
-              <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">TOTAL FINAL....</span>
-              </div>
-              <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12 mb-2 border rounded headTab">
-            <h6>SETECIENTOS CUARENTA MIL DOCIENTOS TRES PESOS</h6>
-          </div>
-
-
-        <div class="col-md-6 border rounded headTab">
-          <p>las imagenes son a mido ilistrativo</p>
-        </div>
-        <div class="col-md-6 border rounded headTab">
-          <p>Nombre del vendedor logeado</p>
-        </div>
-        <button type="submit" name="button" style="with:80px;"></button>
-      </form>
-    </div>          {{-- div col-md-12 --}}
-  </div>       {{-- div container --}}
-</div>
+      @include('layouts.navProfile')
+    </div>
+  </div>
 
 @endsection
