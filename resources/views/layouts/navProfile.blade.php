@@ -1,4 +1,4 @@
-<div class="col-md-2 offset-md-1 shadow p-3 mb-5 bg-white rounded">
+<div class="col-md-2 offset-md-1 shadow p-3 bg-white rounded">
   <div class="row">
     <div class="col-md-12 text-center p-1">
       <h4>Vendedor</h4>
