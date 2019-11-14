@@ -27,9 +27,5 @@
         <a class="nav-link disabled" href="{{ route('faq')}}" tabindex="-1" aria-disabled="true">Preguntas frecuentes</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Buscar producto" aria-label="Search">
-      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
-    </form>
   </div>
 </nav>

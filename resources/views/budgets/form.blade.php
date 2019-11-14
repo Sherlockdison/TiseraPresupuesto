@@ -19,23 +19,22 @@
               <img src="/images/giroItalia.jpg" alt="producto" width="100px">
             </div>
             <div class="p-1 flex-fill d-flex align-items-center border">
-              <p>Puesto de trabajo Giro DItalia. Fabricado en melamina de 25mm, terminacion ABS. Incluye bandeja y porta cpu. Medidas Largo 2.15m Ancho 1.75m Alto 0.75m</p>
+              <span>Puesto de trabajo Giro DItalia. Fabricado en melamina de 25mm, terminacion ABS. Incluye bandeja y porta cpu. Medidas Largo 2.15m Ancho 1.75m Alto 0.75m</span>
             </div>
             <div class="p-1 flex-fill d-flex align-items-center border">
-              <p>Extencion izquierda.
+              <span>Extencion izquierda.
                 CEDRO/NEGRO.
-                ACABADOS ABS..</p>
+                ACABADOS ABS..</span>
             </div>
             <div class="p-1 flex-fill d-flex align-items-center border">
-              <p>1</p>
+              <span>1</span>
             </div>
             <div class="p-1 flex-fill d-flex align-items-center border">
-              <p>$14250</p>
+              <span>$14250</span>
             </div>
             <div class="p-1 flex-fill d-flex align-items-center border">
-              <p>$14250</p>
+              <span>$14250</span>
             </div>
-
           </li>
         </ul>
       </div>

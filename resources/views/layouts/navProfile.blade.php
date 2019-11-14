@@ -1,42 +1,47 @@
-<div class="col-md-2 offset-md-1 shadow p-3 bg-white rounded">
-  <div class="row">
-    <div class="col-md-12 text-center p-1">
+<div class="col-md-2 offset-md-1 shadow p-1 bg-white rounded">
+  <div class="d-flex flex-column">
+    <div class="text-center p-1">
       <h4>Vendedor</h4>
-      <img src="/images/ProfilePhoto.jpg" class="col-md-12 rounded-circle" alt="">
-    </div>
-    <div class="col-md-12 text-center p-3">
+      <img src="/images/ProfilePhoto.jpg" class="rounded-circle" style="width: 9rem" alt="">
       <h6>Edison Martínez</h6>
       <span>Sarmiento 1373</span>
     </div>
-    <div class="col-md-12 mb-1">
+    <div class="p-1">
       <a href="..." class="col btn btn-outline-dark">Crear Presupuesto</a>
     </div>
-    <div class="col-md-12 mb-1">
+    <div class="p-1">
+      <button type="button" class="col btn btn-outline-dark" data-toggle="modal" data-target="#iAgreeProduct" data-whatever="Agregar Producto">Agregar Producto</button>
+    </div>
+    <div class="p-1">
       <button type="button" class="col btn btn-outline-dark" data-toggle="modal" data-target="#quoteShipping" data-whatever="Cantidad deseada">Cotizar Flete</button>
     </div>
-    <div class="col-md-12 mb-1">
+    <div class="p-1">
       <button type="button" class="col btn btn-outline-dark" data-toggle="modal" data-target="#payment" data-whatever="Cantidad deseada">Modalida de pago</button>
     </div>
-    <div class="col-md-12 mb-1">
+    <div class="p-1">
       <a href="/budgets" class="col btn btn-outline-dark">Editar Presupuesto</a>
     </div>
-    <div class="col-md-12 m-1 text-center">
+    <div class="p-1 text-center">
       <a href="..." class="btn btn-outline-danger">Cerrar Sesión</a>
     </div>
   </div>
 </div>
 
 {{-- caja modal 1 Detalle de Producto --}}
-<div class="modal fade" id="detailProduct" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="iAgreeProduct" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Especificaciones para Gala PVC NEGRA</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Agrega un Producto</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
+        <form class="d-flex my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar producto" aria-label="Search">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
         <form>
           <div class="form-group">
             <label for="quantityName" class="col-form-label">Cantidad:</label>
