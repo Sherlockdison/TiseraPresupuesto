@@ -42,6 +42,7 @@
           <input class="form-control mr-sm-2" type="search" placeholder="Buscar producto" aria-label="Search">
           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
         </form>
+        {{-- Cada vez que elijas un producto se despliega la seccion cantidad y aclaraciones --}}
         <form>
           <div class="form-group">
             <label for="quantityName" class="col-form-label">Cantidad:</label>

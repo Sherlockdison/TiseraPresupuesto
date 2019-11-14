@@ -98,18 +98,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-2 offset-md-1 shadow p-3 mb-5 bg-white rounded">
-        <div class="row">
-          <div class="col-md-12 text-center p-1">
-            <h4>Vendedor</h4>
-            <img src="/images/ProfilePhoto.jpg" class="col rounded-circle" alt="">
-          </div>
-          <div class="col-md-12 text-center p-3">
-            <h6>Edison Martínez</h6>
-            <span>Sarmiento 1373</span>
-          </div>
-        </div>
-      </div>
+      @include('layouts.navProfile')
     </div>
   </div>
 
